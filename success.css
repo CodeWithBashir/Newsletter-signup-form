@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
+  color: hsl(234, 29%, 20%);
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 54px;
+}
+.success {
+  width: 500px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 60px;
+  margin: 150px auto;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+p {
+  color: hsl(231, 7%, 60%);
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: hsl(234, 29%, 20%);
+  padding: 20px 20px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 9px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}
+.success-img {
+  margin-bottom: 10px;
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to right, rgb(255, 98, 87), #f98139);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 20px 20px 0px rgba(255, 98, 87, 0.2);
+}
+
+@media (max-width: 768px) {
+  .success {
+    width: 90%;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .success {
+    margin: 0;
+    width: 100%;
+    padding: 150px 20px;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 18px;
+    color: hsl(235, 18%, 26%);
+  }
+  .btn {
+    font-size: 16px;
+    margin-top: 300px;
+  }
+}
